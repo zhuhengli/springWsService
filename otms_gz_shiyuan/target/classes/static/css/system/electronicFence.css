@@ -1,0 +1,26 @@
+.content{
+	margin:50px;
+}
+#commentForm .flex{
+	display: flex;
+	align-items: center;
+}
+
+.inputGroup{
+	position:relative;
+	display: flex;
+    align-items: center;
+}
+.meter{
+	margin-right:10px;
+}
+label.validate-error{
+	color:red;
+	display:block;
+	font-size:14px;
+}
+
+
+
+
+

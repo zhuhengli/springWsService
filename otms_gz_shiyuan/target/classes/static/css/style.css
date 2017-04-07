@@ -1,0 +1,74 @@
+﻿body{
+	font-size: 12px;
+}
+a:hover{background-color:#9932CC;color: white;}
+.table_title{
+	color: gray;
+	font-weight: bold;
+	text-align: right;
+}
+.btn_row_add {
+	width: 12px;
+	height: 12px;
+	margin-left: -5px;
+	display: inline-block;
+	background: url(../images/row_add.png) no-repeat;
+}
+.btn_row_del {
+	width: 12px;
+	height: 12px;
+	margin-left: 7px;
+	display: inline-block;
+	background: url(../images/row_del.png) no-repeat;
+}
+.HeadPhotoClass{
+	width:80px;
+	height:100px;
+	border:2px solid orange;
+	box-shadow:3px 3px black;
+}
+<!--打印控件CSS-->
+.DisplayReportFrameClass{margin-top: 8px; border: 2px solid orange;}
+<!--图片slide-->
+.c{overflow:hidden;width:620px;padding:0 5px;margin:0 auto;background-color:#FFFFFF;}
+.c2{margin: 30px 0 0;height: 200px;}
+.c2_l{float: left;position:relative;height: 175px;width:618px;border: 1px solid #c5c5c5;}
+.c2_l h4{position: absolute;top:-25px;left:20px;padding:0 10px;display: inline-block;background-color: #FFFFFF;border-bottom: none;color: gray;}
+.c2_slide{margin:5px 0 0 -37px;width:642px;height: 160px;position: relative;overflow: hidden;}
+.c2_slide_c{position: absolute;width: 5000px;height: 160px;top: 0;left: 0;}
+.c2_lc{width: 642px;float: left;}
+.c2_lc li{float: left;width: 190px;height: 160px;margin:0 7px;}
+.c2_lc li span{display: block;font:12px/30px arial;text-align: center;}
+.c2_slide_btn{position: absolute;top: -13px;right: 10px;width: 80px;height: 24px;}
+.c2_slide_prev,.c2_slide_next{float: left;display: block;width: 40px;height: 24px;background-image: url(../images/i_i.png);background-repeat: no-repeat;}
+.c2_slide_prev{background-position: 0 -111px;}
+.c2_slide_next{background-position: -40px -111px;}
+.c2_slide_prev:hover{background-position: 0 -143px;}
+.c2_slide_next:hover{background-position: -40px -143px;}
+<!--图片slide-->
+/*font*/
+.font0{font-size:0px} .font1{font-size:1px} .font2{font-size:2px} .font3{font-size:3px} .font4{font-size:4px} .font5{font-size:5px} .font6{font-size:6px} .font7{font-size:7px} .font8{font-size:8px} .font9{font-size:9px} .font10{font-size:10px} .font11{font-size:11px} .font12{font-size:12px} .font13{font-size:13px} .font14{font-size:14px} .font15{font-size:15px} .font16{font-size:16px} .font17{font-size:17px} .font18{font-size:18px} .font19{font-size:19px} .font20{font-size:20px} .font21{font-size:21px} .font22{font-size:22px} .font23{font-size:23px} .font24{font-size:24px} .font25{font-size:25px} .font26{font-size:26px} .font27{font-size:27px} .font28{font-size:28px} .font29{font-size:29px} .font30{font-size:30px} .font31{font-size:31px} .font32{font-size:32px} .font33{font-size:33px} .font34{font-size:34px} .font35{font-size:35px} .font36{font-size:36px} .font37{font-size:37px} .font38{font-size:38px} .font39{font-size:39px} .font40{font-size:40px} .font41{font-size:41px} .font42{font-size:42px} .font43{font-size:43px} .font44{font-size:44px} .font45{font-size:45px} .font46{font-size:46px} .font47{font-size:47px} .font48{font-size:48px} .font49{font-size:49px} .font50{font-size:50px} .font51{font-size:51px} .font52{font-size:52px} .font53{font-size:53px} .font54{font-size:54px} .font55{font-size:55px} .font56{font-size:56px} .font57{font-size:57px} .font58{font-size:58px} .font59{font-size:59px} .font60{font-size:60px} .font61{font-size:61px} .font62{font-size:62px} .font63{font-size:63px} .font64{font-size:64px} .font65{font-size:65px} .font66{font-size:66px} .font67{font-size:67px} .font68{font-size:68px} .font69{font-size:69px} .font70{font-size:70px} .font71{font-size:71px} .font72{font-size:72px} .font73{font-size:73px} .font74{font-size:74px} .font75{font-size:75px} .font76{font-size:76px} .font77{font-size:77px} .font78{font-size:78px} .font79{font-size:79px} .font80{font-size:80px} .font81{font-size:81px} .font82{font-size:82px} .font83{font-size:83px} .font84{font-size:84px} .font85{font-size:85px} .font86{font-size:86px} .font87{font-size:87px} .font88{font-size:88px} .font89{font-size:89px} .font90{font-size:90px} .font91{font-size:91px} .font92{font-size:92px} .font93{font-size:93px} .font94{font-size:94px} .font95{font-size:95px} .font96{font-size:96px} .font97{font-size:97px} .font98{font-size:98px} .font99{font-size:99px} .font100{font-size:100px}
+/*输入框公共样式*/
+.css-textInput{
+	outline: 0;
+    text-indent: 3px;
+    display: block;
+    
+}
+.css-btn{
+	outline:none;
+	display: inline-block;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.css-btn:hover{
+	background: #ccc;
+    color: #fff;
+}
+label.validate-error{
+	color:red;
+	display:block;
+	font-size:14px;
+}
+

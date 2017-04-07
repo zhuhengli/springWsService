@@ -1,0 +1,389 @@
+body {
+	background-color: #fff;
+	
+	font-size: 13px;
+}
+
+.hyl_dispatch_top {
+	text-align: left;
+	margin: 20px;
+	font-size: 13px;
+}
+
+.hyl_dispatch_margin_top {
+	margin-top: 10px;
+}
+
+.clearfix:after, .clearfix:before {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.right {
+	float: right;
+}
+
+.inline {
+	display: inline;
+}
+
+.hyl_dispatch_add_title_style {
+	background-color: #f5f5f5;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.hyl_dispatch_add_content_style {
+	font-size: 13px;
+}
+
+.hyl_dispatch_add_content_time_style {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+}
+
+.hyl_dispatch_add_line_style {
+	background-color: #f5f5f5;
+	height: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.span_width {
+	width: 32%;
+	display: inline-block;
+}
+
+.button_style {
+	line-height: 26px;
+	height: 26px;
+	color: #fff;
+	font-size: 13px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: inset 0px 0px 0px 0px #ffffff;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.a_background_green {
+	width: 120px;
+	background-color: #39d08b;
+}
+
+.a_background_org {
+	width: 140px;
+	background-color: #fc8b12;
+}
+.a_background_gray{
+	width: 120px;
+	background-color: #f5f5f5;	
+	color: black;
+}
+
+.hyl_dispatch_add_activity_title {
+	font-size: 14px;
+	margin: 10px;
+}
+
+.hyl_dispatch_add_activity_title_status {
+	font-size: 14px;
+	margin: 10px;
+	color: red;
+}
+
+.hyl_dispatch_add_table_title_style{
+	width: 100%;
+	border:0;
+	border-collapse:collapse;  
+	border-spacing:0;  
+}
+
+.hyl_dispatch_add_table_title_style th,td{
+	padding:10px;
+}
+.hyl_dispatch_add_table_background_style {
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+.td_max_text_color{
+	color: #207eff;
+}
+/* ������ʾ */
+.hyl_dispatch_add_table_style_td{
+	word-break: break-all;
+	max-width: 28%;
+	font-size: 13px;
+	text-align:center;
+
+}
+/* ���ֵ�����ʾ  */
+.hyl_dispatch_add_table_style_td_short{
+	word-break: keep-all;
+	font-size: 13px;
+	max-width: 8%;
+	text-align: center;
+}
+
+.table_second_tr{
+	vertical-align: text-top; 
+}
+
+
+/* ȥ��thĬ�ϵ�����Ӵ� */
+.hyl_dispatch_add_table_background_style th{
+	font-weight: normal;
+	word-break: keep-all;
+	font-size: 13px;
+}
+
+
+/**************************************ͨ����ʽ*******************************************/
+.hyl-padding-left-10{
+	padding-left:10px;
+}
+
+#loadingShortTableDiv,#linesTableDiv,#unloadShortTableDiv{
+	border-bottom:4px solid #f5f5f5
+}
+
+
+
+/*wbb*/
+*{
+		box-sizing: border-box;
+}
+#vehicleInfoTabs .tabs-header .tabs{
+		width:100%;
+}
+#vehicleInfoTabs .tabs-header .tabs li{
+	    width: 25%;
+	    border-bottom: 1px solid#ccc;
+
+}
+#vehicleInfoTabs .tabs-header .tabs li a{
+	    display:inline-block;
+	    background: #fff;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+}
+#vehicleInfoTabs .tabs-header .tabs .tabs-selected a{
+	    border-bottom: 3px solid orange;
+}
+
+#vehicleInfoTabs .tabs-header .tabs .tabs-selected a .tabs-title{
+	    color: orange;
+}
+
+#towingVehiclePlateNumberGrid,#trailerVehiclePlateNumberGrid,#driverSearchStringGrid,#driverSearchStringGrid{
+	margin-right: 30px;
+	height: 30px;
+    border-radius: 1px;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    width: 223px;
+}
+#towingVehicleSearch,#trailerVehicleSearch,#driverSearch1,#driverSearch2 {
+	width: 100px;
+    position: static;
+    display: inline-block;
+    left: auto;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+#towingVehicleInfoDiv,#trailerVehicleInfoDiv,#transportDriver1Div,#transportDriver2Div{
+	    display: inline-block;
+    	margin: 0 5px 20px;
+}
+#towingVehicleSearch .l-btn-left,
+#trailerVehicleSearch .l-btn-left,
+#transportDriver1Div .l-btn-left,
+#transportDriver2Div .l-btn-left{
+	    display: inline-block;
+	    width: 100%;
+	    height: 30px;
+	    line-height: 30px;
+}
+#towingVehicleSearch .l-btn-text,
+#trailerVehicleSearch .l-btn-text,
+#transportDriver1Div .l-btn-text,
+#transportDriver2Div .l-btn-text{
+	    display: inline-block;
+    width: 100%;
+    height: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+
+.relative{
+	position:relative;
+}
+.relative .inlineBlock{
+	display:inline-block;
+}
+
+.checkbox-label{
+	cursor: pointer;
+    position: absolute;
+        width: 15px;
+    height: 15px;
+    
+    border: 1px solid #ddd;
+}
+.checkbox-label:after{
+	display:none;
+	left:1px;
+	top:2px;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    border: 2px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+
+.checkbox-label:hover::after {
+	
+}
+ 
+
+.inlineBlock input[type=checkbox]:checked + .checkbox-label:after {
+	display:block;
+}
+
+
+
+
+.datagrid-cell-c1-Id{
+	text-align:center;
+	
+}
+.com-radio + label:after{
+	    left: 2px;
+    top: 1.5px;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+}
+.com-radio:checked + label:after{
+	background:orange;
+	
+}
+.com-radio-label{
+	height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 100%;
+    position:relative;
+}
+.datagrid-cell-c3-Id,.datagrid-cell-c9-Id,.datagrid-cell-c15-Id,.datagrid-cell-c16-Id{
+	text-align:center;
+}
+
+ .common-border{
+	display: inline-block;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative;
+    padding-right: 39px;
+} 
+.common-border span:last-child{
+	     position: absolute;
+    top: -8px;
+    right: -8px;
+    height: 16px;
+    width: 16px;
+   background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACuElEQVRYR82XgVEcMQxFoYJABWwqCFTApQOoIJcKQirgqCBJBVkqgA4CFQQqyNEBqSD5b0efMbte2xzMgGY05tay9PUla5ftrVeW7VeOv7UJgH2B/iRl3YmVPG6k97Gex1rNrxUAgb5ITyJo1XGA+a71rGTcAuBIDr5Ju3B0p/Uy1BmzZUawR/fCfq31a9hPsNQAkAGZI9fSlfSqJX3ZLML+MOw5O2GjBKDXAWqNkAFgNhHKBoMIPj+nTuYAOPO/MobO1qznAMIGZXsXLMDGIDkABLyI/Y8vENyxAPErfhwHoAkAuv23tJPmaKfRuG4tgi/8pPYux1rP3+cYgJpTKQ0H4lR8mEbCriQEJ1sAE4iAFgB9kA5+xiXgWlGnHPUAMoU0Uj+DIA1+GyBSU/sh1m4KwBvc827G+VLPf8ZeDsQ4OD4JNBYYYU4cpADc+T+0Ad1z4lLgGKZc49bg+H2IlQK40gZDo6Xze9kxIwyCjFxzaJ/L3Emxj/11CsDNcZBkVSBi6AGDAAAN1xIcn9hy225SAP8iWm08GxSUwxodjbQG9/kh3nMBmHZ8wSDlyzVdjskJgKeUYNxwnSJwfSnLo1mfi5yU4HaTJsx1OwAoRyuIhWwnTdhyDUtXjcYyiNrbM3sN3ZlrORrm9Eha7vlSZ0qDyi6JMRlEbJZGsXuk1u0piNJI51W/M75yKz3kZQSVHLZ0+uOPtBbc9vaTK0XxZQTNGEDP+DAlgrrWa4a9x7SBeYw/vG/e3AfJmEKy5euFkjxHFjrMVxYMP/qeKI3dXsb+KIU63pKbiGnn7Ll0mTqpzf2VjGlKhHrSF61skDVfw/QCkv2SqgHg4JGUwZH+o3Gp3yhXyY1GICYh9mgXgWk4WMB+Ii0AfGgVjgjSIoADOOdm5SkA7IRMl1JWmip9HdO0MNLHWgX6H5hUwL5jIksrAAAAAElFTkSuQmCC);
+    border-radius: 100%;
+    background-position: 100%;
+    background-size: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+#towingVehicleInfoDiv input,#trailerVehicleInfoDiv input,#transportDriver1Div input,#transportDriver2Div input{
+	    position: absolute;
+	    right: -18px;
+	    top: -10px;
+}
+#vehicleInfoTabsDiv{
+	overflow:scroll;
+}
+.dialog-buttons{
+	    margin: 20px 0;
+}
+.dialog-buttons a{
+	    border: 0;
+    	
+    	width: 150px !imporant;
+}
+.dialog-buttons a:first-child{
+	   
+    background: orange;
+    color: #fff;
+   
+    margin-right: 70px;
+}
+.dialog-buttons a:last-child{
+	    background: #eee;
+    color: #999;
+   
+  
+}
+
+.c_dialogOrder textarea,.c_dialogTask textarea{
+	    width: 80%;
+	    height: 60%;
+	    margin: 10px auto;
+	    display: block;
+}
+.c_dialogOrder .c_btnGroup , .c_dialogTask .c_btnGroup{
+	display: flex;
+    justify-content: space-around;
+}
+
+.commentForm{
+	 width: 100%;
+	    height: 80%;
+	    text-align:center;
+}
+
+
+
+

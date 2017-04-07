@@ -1,0 +1,1372 @@
+2016-12-01 17:52:24.692  INFO 17680 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 17680 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-01 17:52:24.693  INFO 17680 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-01 17:52:24.777  INFO 17680 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4550bb58: startup date [Thu Dec 01 17:52:24 CST 2016]; root of context hierarchy
+2016-12-01 17:52:25.740  INFO 17680 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-01 17:52:26.119  INFO 17680 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86094806] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-01 17:52:26.511  INFO 17680 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-01 17:52:26.536  INFO 17680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-01 17:52:26.621  INFO 17680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-01 17:52:26.624  INFO 17680 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-01 17:52:26.626  INFO 17680 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-01 17:52:26.819  INFO 17680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-01 17:52:27.183  INFO 17680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-01 17:52:27.331  INFO 17680 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-01 17:52:27.337  WARN 17680 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-01 17:52:28.718  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4550bb58: startup date [Thu Dec 01 17:52:24 CST 2016]; root of context hierarchy
+2016-12-01 17:52:28.795  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-01 17:52:28.796  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-01 17:52:28.797  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-01 17:52:28.797  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-01 17:52:28.797  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-01 17:52:28.798  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-01 17:52:28.798  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-01 17:52:28.799  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-01 17:52:28.799  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-01 17:52:28.800  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-01 17:52:28.800  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-01 17:52:28.802  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-01 17:52:28.803  INFO 17680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-01 17:52:28.832  INFO 17680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-01 17:52:28.832  INFO 17680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-01 17:52:28.870  INFO 17680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-01 17:52:29.065  INFO 17680 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.626 seconds (JVM running for 5.282)
+2016-12-01 17:52:29.087  INFO 17680 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4550bb58: startup date [Thu Dec 01 17:52:24 CST 2016]; root of context hierarchy
+2016-12-01 17:52:29.093  INFO 17680 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 09:42:31.660  INFO 65184 --- [main] c.m.project1.SpringbootJpa1Application   : Starting SpringbootJpa1Application on DESKTOP-QQM7PMN with PID 65184 (F:\springBootProject\springboot_jpa1-master\target\classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 09:42:31.663  INFO 65184 --- [main] c.m.project1.SpringbootJpa1Application   : No active profile set, falling back to default profiles: default
+2016-12-02 09:42:31.725  INFO 65184 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@166fa74d: startup date [Fri Dec 02 09:42:31 CST 2016]; root of context hierarchy
+2016-12-02 09:42:32.630  INFO 65184 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 09:42:32.989  INFO 65184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5459403a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 09:42:33.441  INFO 65184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-12-02 09:42:33.455  INFO 65184 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-02 09:42:33.456  INFO 65184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-12-02 09:42:33.482  WARN 65184 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] with name [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6331) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 09:42:33.491  WARN 65184 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@5ebaa74e] with name [org.apache.catalina.webresources.StandardRoot@5ebaa74e] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:656) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 09:42:33.491  WARN 65184 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@5a660a8b] with name [org.apache.catalina.webresources.Cache@5a660a8b] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:658) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 09:42:33.503  WARN 65184 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [F:\springboot-tomcat-tmp\work\Tomcat\localhost\ jhk l.m,?,] for context [/ jhk l.m,?,]
+2016-12-02 09:42:33.546  WARN 65184 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/ jhk l.m,?,]] with name [WebappLoader[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 09:42:33.559 ERROR 65184 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 09:42:33.561 ERROR 65184 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 8 common frames omitted
+Caused by: javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 9 common frames omitted
+
+2016-12-02 09:42:33.562 ERROR 65184 --- [main] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) [spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:14) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+
+2016-12-02 09:42:33.563  WARN 65184 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-12-02 09:42:33.574 ERROR 65184 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:14) [classes/:na]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 8 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 15 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 17 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 19 common frames omitted
+
+2016-12-02 09:42:33.575  INFO 65184 --- [main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/F:/springBootProject/springboot_jpa1-master/target/classes/, file:/F:/lib/org/springframework/boot/spring-boot-starter-data-jpa/1.3.1.RELEASE/spring-boot-starter-data-jpa-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter/1.3.1.RELEASE/spring-boot-starter-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot/1.3.1.RELEASE/spring-boot-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-autoconfigure/1.3.1.RELEASE/spring-boot-autoconfigure-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-logging/1.3.1.RELEASE/spring-boot-starter-logging-1.3.1.RELEASE.jar, file:/F:/lib/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar, file:/F:/lib/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar, file:/F:/lib/org/slf4j/jul-to-slf4j/1.7.13/jul-to-slf4j-1.7.13.jar, file:/F:/lib/org/slf4j/log4j-over-slf4j/1.7.13/log4j-over-slf4j-1.7.13.jar, file:/F:/lib/org/yaml/snakeyaml/1.16/snakeyaml-1.16.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-aop/1.3.1.RELEASE/spring-boot-starter-aop-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.jar, file:/F:/lib/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/F:/lib/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-jdbc/1.3.1.RELEASE/spring-boot-starter-jdbc-1.3.1.RELEASE.jar, file:/F:/lib/org/apache/tomcat/tomcat-jdbc/8.0.30/tomcat-jdbc-8.0.30.jar, file:/F:/lib/org/apache/tomcat/tomcat-juli/8.0.30/tomcat-juli-8.0.30.jar, file:/F:/lib/org/springframework/spring-jdbc/4.2.4.RELEASE/spring-jdbc-4.2.4.RELEASE.jar, file:/F:/lib/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar, file:/F:/lib/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar, file:/F:/lib/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar, file:/F:/lib/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final.jar, file:/F:/lib/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/F:/lib/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar, file:/F:/lib/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/F:/lib/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/F:/lib/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar, file:/F:/lib/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/F:/lib/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/F:/lib/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar, file:/F:/lib/org/springframework/data/spring-data-jpa/1.9.2.RELEASE/spring-data-jpa-1.9.2.RELEASE.jar, file:/F:/lib/org/springframework/data/spring-data-commons/1.11.2.RELEASE/spring-data-commons-1.11.2.RELEASE.jar, file:/F:/lib/org/springframework/spring-orm/4.2.4.RELEASE/spring-orm-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/spring-tx/4.2.4.RELEASE/spring-tx-4.2.4.RELEASE.jar, file:/F:/lib/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar, file:/F:/lib/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar, file:/F:/lib/org/springframework/spring-aspects/4.2.4.RELEASE/spring-aspects-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-web/1.3.1.RELEASE/spring-boot-starter-web-1.3.1.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-validation/1.3.1.RELEASE/spring-boot-starter-validation-1.3.1.RELEASE.jar, file:/F:/lib/org/hibernate/hibernate-validator/5.2.2.Final/hibernate-validator-5.2.2.Final.jar, file:/F:/lib/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/F:/lib/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar, file:/F:/lib/com/fasterxml/jackson/core/jackson-databind/2.6.4/jackson-databind-2.6.4.jar, file:/F:/lib/com/fasterxml/jackson/core/jackson-annotations/2.6.4/jackson-annotations-2.6.4.jar, file:/F:/lib/com/fasterxml/jackson/core/jackson-core/2.6.4/jackson-core-2.6.4.jar, file:/F:/lib/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/spring-expression/4.2.4.RELEASE/spring-expression-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/boot/spring-boot-starter-tomcat/1.3.1.RELEASE/spring-boot-starter-tomcat-1.3.1.RELEASE.jar, file:/F:/lib/org/apache/tomcat/embed/tomcat-embed-core/8.0.30/tomcat-embed-core-8.0.30.jar, file:/F:/lib/org/apache/tomcat/embed/tomcat-embed-el/8.0.30/tomcat-embed-el-8.0.30.jar, file:/F:/lib/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.30/tomcat-embed-logging-juli-8.0.30.jar, file:/F:/lib/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.30/tomcat-embed-websocket-8.0.30.jar, file:/F:/lib/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar, file:/F:/lib/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar, file:/F:/lib/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar, file:/F:/lib/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar, file:/F:/lib/commons-codec/commons-codec/1.2/commons-codec-1.2.jar, file:/F:/lib/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar, file:/F:/lib/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar, file:/F:/lib/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, file:/F:/lib/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.30/tomcat-embed-jasper-8.0.30.jar, file:/F:/lib/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar, file:/F:/lib/javax/servlet/jstl/1.2/jstl-1.2.jar, file:/F:/lib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, file:/F:/lib/org/springframework/spring-context-support/4.2.4.RELEASE/spring-context-support-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE.jar, file:/F:/lib/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE.jar, file:/F:/lib/com/alibaba/fastjson/1.2.16/fastjson-1.2.16.jar]
+2016-12-02 15:20:31.647  INFO 69344 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 69344 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:20:31.648  INFO 69344 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:20:31.725  INFO 69344 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:20:31 CST 2016]; root of context hierarchy
+2016-12-02 15:20:32.690  INFO 69344 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:20:33.044  INFO 69344 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db810da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:20:33.413  INFO 69344 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:20:33.434  INFO 69344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:20:33.511  INFO 69344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:20:33.513  INFO 69344 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:20:33.516  INFO 69344 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:20:33.685  INFO 69344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:20:34.043  INFO 69344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:20:34.174  INFO 69344 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:20:34.178  WARN 69344 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:20:35.413  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:20:31 CST 2016]; root of context hierarchy
+2016-12-02 15:20:35.486  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:20:35.487  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:20:35.487  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:20:35.489  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:20:35.490  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:20:35.490  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:20:35.491  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:20:35.493  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:20:35.495  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:20:35.497  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:20:35.499  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:20:35.502  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:20:35.503  INFO 69344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:20:35.531  INFO 69344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:20:35.532  INFO 69344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:20:35.571  INFO 69344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:20:35.772  INFO 69344 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.39 seconds (JVM running for 4.985)
+2016-12-02 15:20:35.795  INFO 69344 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:20:31 CST 2016]; root of context hierarchy
+2016-12-02 15:20:35.801  INFO 69344 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:40:50.671  INFO 95820 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 95820 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:40:50.671  INFO 95820 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:40:50.776  INFO 95820 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b2ea799: startup date [Fri Dec 02 15:40:50 CST 2016]; root of context hierarchy
+2016-12-02 15:40:51.866  INFO 95820 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:40:52.239  INFO 95820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a62e2388] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:40:52.604  INFO 95820 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:40:52.625  INFO 95820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:40:52.695  INFO 95820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:40:52.698  INFO 95820 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:40:52.700  INFO 95820 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:40:52.883  INFO 95820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:40:53.259  INFO 95820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:40:53.394  INFO 95820 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:40:53.397  WARN 95820 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:40:54.656  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6b2ea799: startup date [Fri Dec 02 15:40:50 CST 2016]; root of context hierarchy
+2016-12-02 15:40:54.732  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:40:54.734  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:40:54.734  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:40:54.734  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:40:54.735  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:40:54.736  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:40:54.736  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:40:54.738  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:40:54.741  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:40:54.742  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:40:54.743  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:40:54.748  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:40:54.749  INFO 95820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:40:54.776  INFO 95820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:40:54.777  INFO 95820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:40:54.814  INFO 95820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:40:55.009  INFO 95820 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.688 seconds (JVM running for 5.386)
+2016-12-02 15:40:55.031  INFO 95820 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b2ea799: startup date [Fri Dec 02 15:40:50 CST 2016]; root of context hierarchy
+2016-12-02 15:40:55.039  INFO 95820 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:43:40.511  INFO 104300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 104300 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:43:40.512  INFO 104300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:43:40.594  INFO 104300 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:43:40 CST 2016]; root of context hierarchy
+2016-12-02 15:43:41.541  INFO 104300 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:43:41.913  INFO 104300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db810da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:43:42.296  INFO 104300 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:43:42.318  INFO 104300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:43:42.392  INFO 104300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:43:42.394  INFO 104300 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:43:42.396  INFO 104300 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:43:42.565  INFO 104300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:43:42.924  INFO 104300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:43:43.061  INFO 104300 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:43:43.064  WARN 104300 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:43:44.311  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:43:40 CST 2016]; root of context hierarchy
+2016-12-02 15:43:44.384  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:43:44.385  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:43:44.386  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:43:44.387  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:43:44.388  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:43:44.388  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:43:44.389  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:43:44.390  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:43:44.392  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:43:44.395  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:43:44.396  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:43:44.398  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:43:44.399  INFO 104300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:43:44.427  INFO 104300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:43:44.428  INFO 104300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:43:44.465  INFO 104300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:43:44.662  INFO 104300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.417 seconds (JVM running for 5.038)
+2016-12-02 15:43:44.685  INFO 104300 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:43:40 CST 2016]; root of context hierarchy
+2016-12-02 15:43:44.690  INFO 104300 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:44:16.687  INFO 102644 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 102644 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:44:16.688  INFO 102644 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:44:16.766  INFO 102644 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:44:16 CST 2016]; root of context hierarchy
+2016-12-02 15:44:17.696  INFO 102644 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:44:18.061  INFO 102644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db810da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:44:18.471  INFO 102644 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:44:18.494  INFO 102644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:44:18.573  INFO 102644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:44:18.576  INFO 102644 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:44:18.578  INFO 102644 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:44:18.752  INFO 102644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:44:19.106  INFO 102644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:44:19.241  INFO 102644 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:44:19.245  WARN 102644 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:44:20.471  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:44:16 CST 2016]; root of context hierarchy
+2016-12-02 15:44:20.544  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:44:20.546  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:44:20.546  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:44:20.546  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:44:20.546  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:44:20.547  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:44:20.547  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:44:20.548  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:44:20.549  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:44:20.549  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:44:20.549  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:44:20.551  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:44:20.551  INFO 102644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:44:20.581  INFO 102644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:44:20.581  INFO 102644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:44:20.618  INFO 102644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:44:20.821  INFO 102644 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.417 seconds (JVM running for 5.143)
+2016-12-02 15:44:20.846  INFO 102644 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:44:16 CST 2016]; root of context hierarchy
+2016-12-02 15:44:20.852  INFO 102644 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:47:24.203  INFO 102632 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 102632 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:47:24.203  INFO 102632 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:47:24.288  INFO 102632 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:47:24 CST 2016]; root of context hierarchy
+2016-12-02 15:47:25.288  INFO 102632 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:47:25.644  INFO 102632 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db810da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:47:26.009  INFO 102632 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:47:26.033  INFO 102632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:47:26.103  INFO 102632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:47:26.105  INFO 102632 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:47:26.107  INFO 102632 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:47:26.268  INFO 102632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:47:26.629  INFO 102632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:47:26.752  INFO 102632 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:47:26.756  WARN 102632 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:47:27.996  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:47:24 CST 2016]; root of context hierarchy
+2016-12-02 15:47:28.069  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:47:28.070  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:47:28.071  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:47:28.071  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:47:28.072  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:47:28.072  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:47:28.072  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:47:28.074  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:47:28.074  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:47:28.075  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:47:28.075  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:47:28.077  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:47:28.078  INFO 102632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:47:28.108  INFO 102632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:47:28.108  INFO 102632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:47:28.144  INFO 102632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:47:28.336  INFO 102632 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.414 seconds (JVM running for 5.03)
+2016-12-02 15:47:28.372  INFO 102632 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:47:24 CST 2016]; root of context hierarchy
+2016-12-02 15:47:28.381  INFO 102632 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:48:59.844  INFO 90300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Starting SpringbootJpa1ApplicationTests on DESKTOP-QQM7PMN with PID 90300 (F:\springBootProject\springboot_jpa1-master\target\test-classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 15:48:59.845  INFO 90300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : No active profile set, falling back to default profiles: default
+2016-12-02 15:48:59.938  INFO 90300 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:48:59 CST 2016]; root of context hierarchy
+2016-12-02 15:49:00.908  INFO 90300 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 15:49:01.280  INFO 90300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db810da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 15:49:01.663  INFO 90300 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-12-02 15:49:01.688  INFO 90300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-12-02 15:49:01.764  INFO 90300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-12-02 15:49:01.767  INFO 90300 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-12-02 15:49:01.770  INFO 90300 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-12-02 15:49:01.946  INFO 90300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-12-02 15:49:02.284  INFO 90300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-12-02 15:49:02.426  INFO 90300 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-12-02 15:49:02.430  WARN 90300 --- [main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": update  
+2016-12-02 15:49:03.687  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:48:59 CST 2016]; root of context hierarchy
+2016-12-02 15:49:03.761  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findByName]}" onto public java.util.List<com.muselab.project1.domain.Member> com.muselab.project1.controller.MemberController.findByName(java.lang.String)
+2016-12-02 15:49:03.762  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.muselab.project1.controller.MemberController.hello()
+2016-12-02 15:49:03.763  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/save]}" onto public java.lang.String com.muselab.project1.controller.MemberController.teamSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:49:03.765  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/save]}" onto public java.lang.Long com.muselab.project1.controller.MemberController.memberSave(java.lang.String,org.springframework.ui.Model)
+2016-12-02 15:49:03.765  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/MyJsp]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.MemberController.MyJsp(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:49:03.766  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/team/findone]}" onto public com.muselab.project1.domain.Team com.muselab.project1.controller.MemberController.findTeamone(java.lang.String)
+2016-12-02 15:49:03.767  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/winxin]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.WinXinController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:49:03.769  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcclist]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:49:03.771  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzccvalid]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.Valid(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:49:03.775  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zzcc]}" onto public org.springframework.web.servlet.ModelAndView com.muselab.project1.controller.ZzccController.zzcc(java.util.Map<java.lang.String, java.lang.Object>)
+2016-12-02 15:49:03.777  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registered]}" onto public java.util.HashMap<java.lang.String, java.lang.String> com.muselab.project1.controller.ZzccController.registered(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:49:03.779  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-02 15:49:03.779  INFO 90300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-02 15:49:03.809  INFO 90300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:49:03.810  INFO 90300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:49:03.850  INFO 90300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-02 15:49:04.047  INFO 90300 --- [main] c.m.p.SpringbootJpa1ApplicationTests     : Started SpringbootJpa1ApplicationTests in 4.516 seconds (JVM running for 5.211)
+2016-12-02 15:49:04.074  INFO 90300 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51399530: startup date [Fri Dec 02 15:48:59 CST 2016]; root of context hierarchy
+2016-12-02 15:49:04.080  INFO 90300 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-12-02 18:27:16.842  INFO 37400 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : Starting SpringbootJpa1Application on DESKTOP-QQM7PMN with PID 37400 (F:\springBootProject\springboot_jpa1-master\target\classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 18:27:16.848  INFO 37400 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : No active profile set, falling back to default profiles: default
+2016-12-02 18:27:16.972  INFO 37400 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c79a1b7: startup date [Fri Dec 02 18:27:16 CST 2016]; root of context hierarchy
+2016-12-02 18:27:18.175  INFO 37400 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 18:27:18.536  INFO 37400 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d575418f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 18:27:19.018  INFO 37400 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-12-02 18:27:19.030  INFO 37400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-02 18:27:19.031  INFO 37400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-12-02 18:27:19.056  WARN 37400 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] with name [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6331) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:19.064  WARN 37400 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@2a96f718] with name [org.apache.catalina.webresources.StandardRoot@2a96f718] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:656) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:19.064  WARN 37400 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@161a3071] with name [org.apache.catalina.webresources.Cache@161a3071] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:658) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:19.075  WARN 37400 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [F:\springboot-tomcat-tmp\work\Tomcat\localhost\ jhk l.m,?,] for context [/ jhk l.m,?,]
+2016-12-02 18:27:19.110  WARN 37400 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/ jhk l.m,?,]] with name [WebappLoader[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:19.119 ERROR 37400 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:19.121 ERROR 37400 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 8 common frames omitted
+Caused by: javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 9 common frames omitted
+
+2016-12-02 18:27:19.123 ERROR 37400 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) [spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+
+2016-12-02 18:27:19.124  WARN 37400 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-12-02 18:27:19.137 ERROR 37400 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 24 common frames omitted
+
+2016-12-02 18:27:19.139  INFO 37400 --- [restartedMain] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/F:/springBootProject/springboot_jpa1-master/target/classes/]
+2016-12-02 18:27:53.722  INFO 53924 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : Starting SpringbootJpa1Application on DESKTOP-QQM7PMN with PID 53924 (F:\springBootProject\springboot_jpa1-master\target\classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 18:27:53.725  INFO 53924 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : No active profile set, falling back to default profiles: default
+2016-12-02 18:27:53.801  INFO 53924 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a83138c: startup date [Fri Dec 02 18:27:53 CST 2016]; root of context hierarchy
+2016-12-02 18:27:54.956  INFO 53924 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 18:27:55.303  INFO 53924 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b6cee47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 18:27:55.792  INFO 53924 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-12-02 18:27:55.805  INFO 53924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-02 18:27:55.806  INFO 53924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-12-02 18:27:55.831  WARN 53924 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] with name [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6331) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:55.841  WARN 53924 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@38e98811] with name [org.apache.catalina.webresources.StandardRoot@38e98811] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:656) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:55.842  WARN 53924 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@7f9c7413] with name [org.apache.catalina.webresources.Cache@7f9c7413] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:658) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:55.857  WARN 53924 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [F:\springboot-tomcat-tmp\work\Tomcat\localhost\ jhk l.m,?,] for context [/ jhk l.m,?,]
+2016-12-02 18:27:55.897  WARN 53924 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/ jhk l.m,?,]] with name [WebappLoader[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:55.906 ERROR 53924 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:27:55.908 ERROR 53924 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 8 common frames omitted
+Caused by: javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 9 common frames omitted
+
+2016-12-02 18:27:55.910 ERROR 53924 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) [spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+
+2016-12-02 18:27:55.910  WARN 53924 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-12-02 18:27:55.921 ERROR 53924 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 24 common frames omitted
+
+2016-12-02 18:27:55.922  INFO 53924 --- [restartedMain] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/F:/springBootProject/springboot_jpa1-master/target/classes/]
+2016-12-02 18:30:27.256  INFO 12628 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : Starting SpringbootJpa1Application on DESKTOP-QQM7PMN with PID 12628 (F:\springBootProject\springboot_jpa1-master\target\classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 18:30:27.259  INFO 12628 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : No active profile set, falling back to default profiles: default
+2016-12-02 18:30:27.367  INFO 12628 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15b013c: startup date [Fri Dec 02 18:30:27 CST 2016]; root of context hierarchy
+2016-12-02 18:30:28.481  INFO 12628 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 18:30:28.827  INFO 12628 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f44d83d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 18:30:29.312  INFO 12628 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-12-02 18:30:29.324  INFO 12628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-02 18:30:29.325  INFO 12628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-12-02 18:30:29.347  WARN 12628 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] with name [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6331) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:30:29.354  WARN 12628 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@75587a2e] with name [org.apache.catalina.webresources.StandardRoot@75587a2e] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:656) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:30:29.355  WARN 12628 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@6b1dfda] with name [org.apache.catalina.webresources.Cache@6b1dfda] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:658) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:30:29.366  WARN 12628 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [F:\springboot-tomcat-tmp\work\Tomcat\localhost\ jhk l.m,?,] for context [/ jhk l.m,?,]
+2016-12-02 18:30:29.403  WARN 12628 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/ jhk l.m,?,]] with name [WebappLoader[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:30:29.411 ERROR 12628 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:30:29.412 ERROR 12628 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 8 common frames omitted
+Caused by: javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 9 common frames omitted
+
+2016-12-02 18:30:29.414 ERROR 12628 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) [spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+
+2016-12-02 18:30:29.415  WARN 12628 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-12-02 18:30:29.426 ERROR 12628 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:22) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 24 common frames omitted
+
+2016-12-02 18:30:29.428  INFO 12628 --- [restartedMain] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/F:/springBootProject/springboot_jpa1-master/target/classes/]
+2016-12-02 18:31:54.647  INFO 31300 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : Starting SpringbootJpa1Application on DESKTOP-QQM7PMN with PID 31300 (F:\springBootProject\springboot_jpa1-master\target\classes started by wil.zhu in F:\springBootProject\springboot_jpa1-master)
+2016-12-02 18:31:54.650  INFO 31300 --- [restartedMain] c.m.project1.SpringbootJpa1Application   : No active profile set, falling back to default profiles: default
+2016-12-02 18:31:54.754  INFO 31300 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15b013c: startup date [Fri Dec 02 18:31:54 CST 2016]; root of context hierarchy
+2016-12-02 18:31:55.924  INFO 31300 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-12-02 18:31:56.291  INFO 31300 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f44d83d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-12-02 18:31:56.839  INFO 31300 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-12-02 18:31:56.854  INFO 31300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-12-02 18:31:56.855  INFO 31300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-12-02 18:31:56.881  WARN 31300 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] with name [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6331) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:31:56.887  WARN 31300 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@4c2dd465] with name [org.apache.catalina.webresources.StandardRoot@4c2dd465] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:656) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:31:56.888  WARN 31300 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@4232b231] with name [org.apache.catalina.webresources.Cache@4232b231] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:658) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4928) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5058) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:31:56.898  WARN 31300 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [F:\springboot-tomcat-tmp\work\Tomcat\localhost\ jhk l.m,?,] for context [/ jhk l.m,?,]
+2016-12-02 18:31:56.933  WARN 31300 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/ jhk l.m,?,]] with name [WebappLoader[/ jhk l.m,?,]] during component initialisation
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:159) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:31:56.943 ERROR 31300 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2016-12-02 18:31:56.944 ERROR 31300 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/ jhk l.m,?,]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5123) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 8 common frames omitted
+Caused by: javax.management.MalformedObjectNameException: Invalid character '?' in key part of property
+	at javax.management.ObjectName.construct(ObjectName.java:551) ~[na:1.8.0_31]
+	at javax.management.ObjectName.<init>(ObjectName.java:1382) ~[na:1.8.0_31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 9 common frames omitted
+
+2016-12-02 18:31:56.946 ERROR 31300 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_31]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_31]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) [spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:20) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_31]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 6 common frames omitted
+
+2016-12-02 18:31:56.947  WARN 31300 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-12-02 18:31:56.958 ERROR 31300 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532) ~[spring-context-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:764) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.doRun(SpringApplication.java:357) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1124) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1113) [spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at com.muselab.project1.SpringbootJpa1Application.main(SpringbootJpa1Application.java:20) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:462) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:168) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:160) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89) ~[spring-boot-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.0.30.jar:8.0.30]
+	... 24 common frames omitted
+
+2016-12-02 18:31:56.960  INFO 31300 --- [restartedMain] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/F:/springBootProject/springboot_jpa1-master/target/classes/]

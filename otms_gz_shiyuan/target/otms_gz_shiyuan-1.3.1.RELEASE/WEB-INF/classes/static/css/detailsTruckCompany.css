@@ -1,0 +1,22 @@
+body {
+	padding: 30px;
+	font-size: 14px;
+}
+
+.marginLeft{
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.middleWidth{
+	font-weight: normal;
+	width: 33%;
+	font-size: 14px;
+	display: inline;
+}
+
+.marginTop{
+	margin-top: 30px;
+}
+

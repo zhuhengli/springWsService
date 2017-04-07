@@ -1,0 +1,69 @@
+.panel{
+	border:1px solid #dadada; /* border-bottom:none; */border-left:none;border-right:none;
+}
+.datagrid-footer{
+
+}
+.datagrid-header{
+	height:auto !important; overflow-x:hidden;
+}
+.datagrid-view1{
+	width:0px !important;
+}
+.datagrid-view2{
+	width:calc(100% - 2px) !important;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada !important;
+}
+.datagrid-header-inner{
+	 overflow-x:hidden;
+}
+.datagrid-view{
+	width:calc( 100% - 2px) !important;
+}
+.datagrid-view .datagrid-editable-input{
+	width:80% !important; height:25px !important;
+}
+#groupEm{
+	padding:4px 10px; margin-right:15px;border-radius:5px; border:1px solid #dadada;margin-bottom:10px; margin-top:10px;  font-family:'Microsoft YaHei'; font-size:16px;
+}
+span.groupSpan,span.fifSpan{cursor:pointer; padding:5px 10px;border-radius:5px; border:1px solid #dadada;
+margin-bottom:20px; margin-right:15px; font-family:'Microsoft YaHei'; font-size:16px; margin-top:10px;
+}
+.panel-body-noheader{
+	border:none; bordder-color:#dadada !important;
+}
+.datagrid-body{
+	 overflow:auto;
+}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{
+	line-height:30px;
+}
+.datagrid-header-row{
+ height:31px !important;
+}
+ table.datagrid-htable,table.datagrid-btable{
+ height:auto !important; min-width:100%;
+ }
+
+ .datagrid-header,.datagrid-header-inner,.datagrid-body,.datagrid-footer{
+ 	min-width:100% !important;
+ }
+.datagrid-footer-inner{
+	width:100% !important;	
+}  
+.datagrid-ftable{
+	min-width:100% !important;
+}
+.datagrid-footer{
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+
+#truckCompanyForm .datagrid-htable tr td{
+	text-align:center;
+}
+#truckCompanyForm .datagrid-body table{
+	width:100%;
+}

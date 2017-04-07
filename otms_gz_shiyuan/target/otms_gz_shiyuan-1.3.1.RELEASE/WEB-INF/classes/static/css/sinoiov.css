@@ -1,0 +1,72 @@
+/********************�Ի���***************************/
+.dialog-wrapper {
+	display: none;
+}
+
+.dialog-text {
+	font-size: 12px;
+	text-align: center;
+	padding: 5% 0;
+}
+/*�Ի���ײ���ť��ʽ*/
+.dialog-buttons {
+	text-align: center;
+}
+
+.dialog-buttons .dialog-button {
+	width: 30%;
+	height: 25px;
+}
+
+#unsavedBadge {
+	display: inline-block;
+	background: red;
+	color: #FFF;
+	padding:0 5px;
+	border-radius: 5px;
+	line-height: 26px;
+    height: 26px;
+    font-size: 13px;
+}
+
+#sendNotice {
+	display: inline-block;
+	position: relative;
+}
+
+#sendNoticeBadge {
+	display: none;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+	background: red;
+	color: #FFF;
+	font-weight: bolder;
+}
+
+.datalist{
+	list-style:none;
+	padding:0;
+	margin:0;
+	
+	display:none;
+	width:70%;
+	border:1px solid #AAA;
+}
+.datalist li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	
+	line-height:30px;	
+	
+}
+
+.datalist li:hover{
+	color:red;
+	background:#F6F6F6;
+}
